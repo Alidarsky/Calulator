@@ -28,79 +28,101 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.divi = new System.Windows.Forms.Button();
+            this.multi = new System.Windows.Forms.Button();
+            this.minus = new System.Windows.Forms.Button();
+            this.plus = new System.Windows.Forms.Button();
+            this.field1 = new System.Windows.Forms.TextBox();
+            this.field2 = new System.Windows.Forms.TextBox();
+            this.result = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // divi
             // 
-            this.button1.Location = new System.Drawing.Point(197, 31);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.divi.Location = new System.Drawing.Point(134, 59);
+            this.divi.Name = "divi";
+            this.divi.Size = new System.Drawing.Size(75, 23);
+            this.divi.TabIndex = 0;
+            this.divi.Text = "/";
+            this.divi.UseVisualStyleBackColor = true;
+            this.divi.Click += new System.EventHandler(this.divi_Click);
             // 
-            // button2
+            // multi
             // 
-            this.button2.Location = new System.Drawing.Point(197, 60);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.multi.Location = new System.Drawing.Point(53, 59);
+            this.multi.Name = "multi";
+            this.multi.Size = new System.Drawing.Size(75, 23);
+            this.multi.TabIndex = 1;
+            this.multi.Text = "*";
+            this.multi.UseVisualStyleBackColor = true;
+            this.multi.Click += new System.EventHandler(this.multi_Click);
             // 
-            // button3
+            // minus
             // 
-            this.button3.Location = new System.Drawing.Point(116, 31);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.minus.Location = new System.Drawing.Point(53, 88);
+            this.minus.Name = "minus";
+            this.minus.Size = new System.Drawing.Size(75, 23);
+            this.minus.TabIndex = 2;
+            this.minus.Text = "-";
+            this.minus.UseVisualStyleBackColor = true;
+            this.minus.Click += new System.EventHandler(this.minus_Click);
             // 
-            // button4
+            // plus
             // 
-            this.button4.Location = new System.Drawing.Point(116, 60);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.plus.Location = new System.Drawing.Point(134, 88);
+            this.plus.Name = "plus";
+            this.plus.Size = new System.Drawing.Size(75, 23);
+            this.plus.TabIndex = 3;
+            this.plus.Text = "+";
+            this.plus.UseVisualStyleBackColor = true;
+            this.plus.Click += new System.EventHandler(this.plus_Click);
             // 
-            // textBox1
+            // field1
             // 
-            this.textBox1.Location = new System.Drawing.Point(77, 136);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
+            this.field1.Location = new System.Drawing.Point(12, 33);
+            this.field1.Name = "field1";
+            this.field1.Size = new System.Drawing.Size(100, 20);
+            this.field1.TabIndex = 4;
             // 
-            // button5
+            // field2
             // 
-            this.button5.Location = new System.Drawing.Point(45, 31);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.field2.Location = new System.Drawing.Point(146, 33);
+            this.field2.Name = "field2";
+            this.field2.Size = new System.Drawing.Size(100, 20);
+            this.field2.TabIndex = 6;
+            // 
+            // result
+            // 
+            this.result.Location = new System.Drawing.Point(271, 33);
+            this.result.Name = "result";
+            this.result.Size = new System.Drawing.Size(100, 20);
+            this.result.TabIndex = 7;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(252, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(13, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "=";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(380, 261);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.result);
+            this.Controls.Add(this.field2);
+            this.Controls.Add(this.field1);
+            this.Controls.Add(this.plus);
+            this.Controls.Add(this.minus);
+            this.Controls.Add(this.multi);
+            this.Controls.Add(this.divi);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "/";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,12 +130,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button divi;
+        private System.Windows.Forms.Button multi;
+        private System.Windows.Forms.Button minus;
+        private System.Windows.Forms.Button plus;
+        private System.Windows.Forms.TextBox field1;
+        private System.Windows.Forms.TextBox field2;
+        private System.Windows.Forms.TextBox result;
+        private System.Windows.Forms.Label label1;
     }
 }
 
