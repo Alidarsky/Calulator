@@ -5,3 +5,5 @@ H:\ProjectC\NewCalculator-master\Calulator\obj\Debug\Calulator.Properties.Resour
 H:\ProjectC\NewCalculator-master\Calulator\obj\Debug\Calulator.csproj.GenerateResource.Cache
 H:\ProjectC\NewCalculator-master\Calulator\obj\Debug\Calulator.exe
 H:\ProjectC\NewCalculator-master\Calulator\obj\Debug\Calulator.pdb
+H:\ProjectC\NewCalculator-master\Calulator\obj\Debug\Calulator.csprojResolveAssemblyReference.cache
+H:\ProjectC\NewCalculator-master\Calulator\obj\Debug\Calulator.Form1.resources
