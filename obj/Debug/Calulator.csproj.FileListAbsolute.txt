@@ -1,0 +1,7 @@
+H:\ProjectC\NewCalculator-master\Calulator\bin\Debug\Calulator.exe.config
+H:\ProjectC\NewCalculator-master\Calulator\bin\Debug\Calulator.exe
+H:\ProjectC\NewCalculator-master\Calulator\bin\Debug\Calulator.pdb
+H:\ProjectC\NewCalculator-master\Calulator\obj\Debug\Calulator.Properties.Resources.resources
+H:\ProjectC\NewCalculator-master\Calulator\obj\Debug\Calulator.csproj.GenerateResource.Cache
+H:\ProjectC\NewCalculator-master\Calulator\obj\Debug\Calulator.exe
+H:\ProjectC\NewCalculator-master\Calulator\obj\Debug\Calulator.pdb
