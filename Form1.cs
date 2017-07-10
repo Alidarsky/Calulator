@@ -21,33 +21,36 @@ namespace Calulator
         {
             double first = Convert.ToDouble(field1.Text);
             double second = Convert.ToDouble(field2.Text);
-            double resultS = first * second;
-            result.Text = Convert.ToString(resultS);
+            double resultValue = first * second;
+            result.Text = resultValue.ToString();
         }
 
         private void divi_Click(object sender, EventArgs e)
         {
             double first = Convert.ToDouble(field1.Text);
             double second = Convert.ToDouble(field2.Text);
-            double resultS = first / second;
-            result.Text = Convert.ToString(resultS);           
+            double resultValue = first / second;
+            result.Text = resultValue.ToString();           
         }
 
         private void minus_Click(object sender, EventArgs e)
         {
             double first = Convert.ToDouble(field1.Text);
             double second = Convert.ToDouble(field2.Text);
-            double resultS = first - second;
-            result.Text = Convert.ToString(resultS); 
+            double resultValue = first - second;
+            result.Text = resultValue.ToString(); 
         }
 
         private void plus_Click(object sender, EventArgs e)
         {
             double first = Convert.ToDouble(field1.Text);
             double second = Convert.ToDouble(field2.Text);
-            double resultS = first + second;
-            result.Text = Convert.ToString(resultS); 
+            double resultValue = first + second;
+            result.Text = resultValue.ToString(); 
         }
+
+        
+
 
     }
 }
