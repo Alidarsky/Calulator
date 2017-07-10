@@ -17,40 +17,31 @@ namespace Calulator
             InitializeComponent();
         }
 
-        private void multi_Click(object sender, EventArgs e)
+        private void ButtonClick(object sender, EventArgs e)
         {
             double first = Convert.ToDouble(field1.Text);
             double second = Convert.ToDouble(field2.Text);
-            double resultValue = first * second;
+            double resultValue;
+
+            switch (((Button)sender).Name)
+            {
+                case "multi":
+                    resultValue = first * second;                   
+                    break;
+                case "divi":
+                    resultValue = first / second;
+                    break;
+                case "minus":
+                    resultValue = first - second;
+                    break;
+                case "plus":
+                    resultValue = first + second;
+                    break;
+                default:
+                    throw new Exception("Неизвестная операция!");
+            }
             result.Text = resultValue.ToString();
         }
-
-        private void divi_Click(object sender, EventArgs e)
-        {
-            double first = Convert.ToDouble(field1.Text);
-            double second = Convert.ToDouble(field2.Text);
-            double resultValue = first / second;
-            result.Text = resultValue.ToString();           
-        }
-
-        private void minus_Click(object sender, EventArgs e)
-        {
-            double first = Convert.ToDouble(field1.Text);
-            double second = Convert.ToDouble(field2.Text);
-            double resultValue = first - second;
-            result.Text = resultValue.ToString(); 
-        }
-
-        private void plus_Click(object sender, EventArgs e)
-        {
-            double first = Convert.ToDouble(field1.Text);
-            double second = Convert.ToDouble(field2.Text);
-            double resultValue = first + second;
-            result.Text = resultValue.ToString(); 
-        }
-
-        
-
 
     }
 }

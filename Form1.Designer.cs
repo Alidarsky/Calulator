@@ -46,7 +46,7 @@
             this.divi.TabIndex = 0;
             this.divi.Text = "/";
             this.divi.UseVisualStyleBackColor = true;
-            this.divi.Click += new System.EventHandler(this.divi_Click);
+            this.divi.Click += new System.EventHandler(this.ButtonClick);
             // 
             // multi
             // 
@@ -56,7 +56,7 @@
             this.multi.TabIndex = 1;
             this.multi.Text = "*";
             this.multi.UseVisualStyleBackColor = true;
-            this.multi.Click += new System.EventHandler(this.multi_Click);
+            this.multi.Click += new System.EventHandler(this.ButtonClick);
             // 
             // minus
             // 
@@ -66,7 +66,7 @@
             this.minus.TabIndex = 2;
             this.minus.Text = "-";
             this.minus.UseVisualStyleBackColor = true;
-            this.minus.Click += new System.EventHandler(this.minus_Click);
+            this.minus.Click += new System.EventHandler(this.ButtonClick);
             // 
             // plus
             // 
@@ -76,7 +76,7 @@
             this.plus.TabIndex = 3;
             this.plus.Text = "+";
             this.plus.UseVisualStyleBackColor = true;
-            this.plus.Click += new System.EventHandler(this.plus_Click);
+            this.plus.Click += new System.EventHandler(this.ButtonClick);
             // 
             // field1
             // 
