@@ -1,25 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Calulator.OneArgumentCalculator;
+
 
 namespace Calulator
 {
     public static class TwoArgumentsFactory
     {
-        public static ITwoArgumentsCalculator CreateCalculator(string CalcName)
+        public static ITwoArgumentsCalculator CreateCalculator(string calcName)
         {
-            switch (CalcName)
+            switch (calcName)
             {
-                case "multi":
+                case "multiplication":
                     return new Multi();
-                case "divi":
-                    return new Divi();
+                case "division":
+                    return new Division();
                 case "minus":
                     return new Minus();
                 case "plus":
                     return new Plus();
+                case "residue":
+                    return new Residue();
                 default:
                     throw new Exception("Неизвестная операция");
             }

@@ -1,0 +1,8 @@
+﻿
+namespace Calulator.OneArg
+{
+    public interface IOneArgumentCalculator
+    {
+        double Calculate(double first);
+    }
+}

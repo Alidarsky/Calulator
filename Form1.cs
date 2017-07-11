@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Calulator.OneArgumentCalculator;
 
 namespace Calulator
 {
@@ -21,9 +15,16 @@ namespace Calulator
         {
             double first = Convert.ToDouble(field1.Text);
             double second = Convert.ToDouble(field2.Text);
-            var calc = TwoArgumentsFactory.CreateCalculator(((Button) sender).Name);
-            double resultValue = calc.Calculate(first, second);
-          
+            var calc = TwoArgumentsFactory.CreateCalculator(((Button)sender).Name);
+            double resultValue = calc.Calculate(first, second);          
+            result.Text = resultValue.ToString();
+        }
+
+        private void OneButtonClick(object sender, EventArgs e)
+        {
+            double first = Convert.ToDouble(field1.Text);
+            var calc = OneArgumentFactory.CreateCalculator(((Button) sender).Name);
+            double resultValue = calc.Calculate(first);
             result.Text = resultValue.ToString();
         }
     }
